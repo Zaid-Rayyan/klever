@@ -1,0 +1,342 @@
+.slider #sliderI {
+    margin-top: 25px;
+    width: 100%;
+}
+
+/* Welcome Text Section */
+.welcomeText {
+    height: 60vh;
+    color: #218a90;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#w1,
+#w2 {
+    position: relative;
+    text-align: center;
+    font-size: 1em;
+}
+
+#w2 {
+    line-height: 30px;
+}
+
+#w1 {
+    font-family: 'Crete Round', serif;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+@media (min-width:768px) {
+    .welcomeText {
+        height: 85vh;
+    }
+
+    #w1 {
+        font-size: 3em;
+    }
+
+    #w2 {
+        font-size: 1.5em;
+        line-height: 50px;
+
+    }
+}
+
+/* Products Categories */
+.product {
+    border-top: 2px solid #218a90;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.product #title {
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    width: fit-content;
+    background-color: #218a90;
+    color: #ddd;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+}
+
+.productP {
+    display: grid;
+    padding-top: 40px;
+    padding-bottom: 133px;
+    row-gap: 88px;
+    column-gap: 20px;
+}
+
+.productP form {
+    display: inline-block;
+}
+
+/* card code */
+.card {
+    position: relative;
+    font-size: 10px;
+    padding: auto;
+    align-items: center;
+    border-radius: 5px;
+    width: 209px;
+    height: 300px;
+    margin: auto;
+    margin-top: 14px;
+}
+
+.card img {
+    width: 189px;
+    height: 189px;
+    margin: 15px;
+    margin-bottom: 10%;
+}
+
+.card article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: white;
+    color: black;
+    width: 193px;
+    height: 355px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.info {
+    position: relative;
+}
+
+.info h3 {
+    font-size: 10pt;
+
+}
+
+.info p {
+    font-size: 10pt;
+    margin: 13px 0px 14px 0px;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(19, 19, 19, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 4.2px;
+}
+
+.card-overlay a {
+    text-decoration: none;
+    color: #218a90;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.card-overlay:hover {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+#cartA {
+    font-size: 22px;
+    color: #218a90;
+}
+
+.card article .button {
+    text-decoration: none;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    color: #ddd;
+    width: 132px;
+    height: 34px;
+    bottom: -29px;
+    right: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.card article:hover {
+    box-shadow: 0 0.8em 0.8em -0.2em #218a90;
+    transform: translateY(-0.4em);
+    transition: all 0.5s;
+
+}
+
+.Quantity {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.Quantity #quantity {
+    width: 30px;
+    height: 28px;
+    order: 2;
+    margin-left: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 3px;
+}
+
+/* ALL BUTTONS */
+.btn {
+    border-radius: 4px;
+    background-color: #218a90;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 14pt;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+}
+
+.btn {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    transition: 0.5s;
+    position: absolute;
+}
+
+.btn:hover {
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+#VM-btn {
+    right: 69px;
+    margin-top: 25px;
+}
+
+#VM-btn:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 10px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#VM-btn:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+@media (min-width:480px) {
+    .productP {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 111px;
+    }
+}
+
+@media (min-width:768px) {
+    .productP {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 111px;
+        padding: 70px;
+        padding-bottom: 130px;
+    }
+
+    .productP form {
+        display: inline-block;
+    }
+
+    .product #title {
+        margin: 0;
+        margin-top: 40px;
+        position: relative;
+        left: 76px;
+        width: 250px;
+        text-align: center;
+    }
+}
+
+/*LOG IN/ SIGN UP SECTION  */
+.LISU {
+    height: 65vh;
+    border-top: 2px solid #218a90;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.LISU #LISU-P {
+    color: #218a90;
+    font-size: 12pt;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#LI-btn,
+#SU-btn {
+    position: relative;
+    transition: 0.5s;
+    background-color: #292828;
+    color: #218a90;
+    margin-bottom: 20px;
+}
+
+#LI-btn:after,
+#SU-btn:after {
+    content: '→';
+    position: absolute;
+    opacity: 0;
+    top: 10px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#LI-btn:after,
+#SU-btn:after {
+    content: '→';
+    position: absolute;
+    opacity: 0;
+    top: 10px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#LI-btn:hover:after,
+#SU-btn:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+@media (min-width:768px) {
+    .LISU #LISU-P {
+        font-size: 20pt;
+        position: relative;
+        right: 5px;
+    }
+}

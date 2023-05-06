@@ -1,0 +1,227 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+
+*, *:before, *:after {box-sizing: inherit;}
+body{
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+/* Header Code */
+header{
+    width: 100%;
+}
+.upperHeader{
+    display: flex;
+    align-items: baseline;
+    margin: 20px;
+    border-bottom: 1px solid #218a90;
+    position: relative;
+}
+.logoH{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+} 
+#logoIH{
+    display: inline-block;
+    width: 30%;
+}
+#logoTH{
+    color: #f2f2f2;
+    font-size: 1.2em;
+    position: relative;
+    top: 7px;
+    text-decoration: none;
+}
+#logoTH:hover{
+    color: #218a90;
+    transition: all 1s;
+}
+.cart{
+    margin-left: auto;
+    padding: 10px;
+}
+.cart #cartI{
+    width: 80%;
+}
+.cart p{
+    position: relative;
+    bottom: 49px;
+    left: 20px;
+    background-color: r;
+    color: white;
+    background-color: #218a90;
+    text-align: center;
+    border-radius: 46%;
+    font-size: 8pt;
+    width: fit-content;
+    padding: 3px 7px;
+}
+.navBar{
+    text-align: center;
+}
+.navBar #link{
+    list-style: none;
+    margin: auto;
+    padding: 10px 0;
+}
+.navBar #link:hover{
+    background-color: #218a90;
+    transition: all 0.5s;
+}
+.icon{
+    font-size: 13pt;
+}
+
+.icon:focus{
+    color: #218a90;
+    transition: all 0.5s;
+}
+#hamburger-menu{
+    font-size: 13pt;
+    margin-bottom: 20px;
+}
+.navBar a
+{
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px ;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+#navLinks{
+    display: none;
+}
+@media (min-width:615px){
+    .icon{
+        display: none;
+    }
+    #navLinks{
+        display: inline-block;
+    }
+    #logoT{
+        font-size: 1.8em;
+    }
+    .navBar{
+        text-align:start;
+        display: fixed;
+    }
+    #navLinks #link{
+        width: fit-content;
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #navLinks #link:hover{
+        background-color: #212121;
+    }
+    .navBar a:before, .navBar a:after{
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        content: '';
+        background: #218a90;
+        transition: all 0.2s;
+    }
+
+    .navBar a:before{
+        left: 0px;
+        top: 0px;
+    }
+
+    .navBar a:after{
+        right: 0px;
+        bottom: 0px;
+    }
+
+    .navBar a:hover:before, .navBar a:hover:after{
+        height: 2px;
+        width: 100%;
+    }
+}
+/* FOOTER CODE */
+.footer{
+    background-color: #414346;
+    color: #ddd;
+    height: fit-content;
+    padding-bottom: 7px;
+}
+
+.socialMedia{
+    text-align: center;
+    margin-top: 15px;
+}
+.Sicon{
+    color: #ddd;
+    text-decoration: none;
+    padding: 7px;
+}
+#facebook:hover{
+    color: #0e8cf1 ;
+    transition: all 0.5s;
+}
+#instagram:hover{
+    color: #d92c7d ;
+    transition: all 0.5s;
+}
+#linkedin:hover{
+    color: #0a66c2;
+    transition: all 0.5s;
+}
+#twitter:hover{
+    color: #1d9bf0;
+    transition: all 0.5s;
+}
+#youtube:hover{
+    color: #ff0000;
+    transition: all 0.5s;
+}
+
+.logoF{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 40px;
+    position: relative;
+    right: 8px;
+} 
+#logoIF{
+    display: inline-block;
+    width: 10%;
+}
+#logoTF{
+    color: #f2f2f2;
+    font-size: 1.2em;
+    position: relative;
+    top: 7px;
+}
+#logoTF:hover{
+    color: #218a90;
+    transition: all 1s;
+}
+@media (min-width:480px){
+    #logoIF{
+        width: 6%;
+    }
+}
+@media (min-width:768px){
+    #logoIF{
+        width: 3.5%;
+    }
+}
+.copyright p{
+    margin-top: 25px;
+    font-size: 8pt;
+    text-align: center;
+}

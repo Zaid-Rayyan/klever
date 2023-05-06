@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+section{
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cart-button{
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 8px 30px;
+    background-color: rgba(24, 23, 23, 0.8);
+    border-radius: 10px;
+    color: #ddd;
+    position: relative;
+    bottom: -12px;
+    border: none;
+    cursor: pointer;
+}
+.cart-button:hover{
+    box-shadow: 0 0.8em 0.8em -0.2em #218a90;
+    transition: all 0.5s;
+}
+.Quantity{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.Quantity #quantity{
+    width: 30px;
+    height: 28px;
+    order: 2;
+    margin-left: 10px;
+    text-align: center;
+    position: relative;
+    top: 7px;
+}
+#cartA{
+    font-size:22px;
+    color: #218a90;
+}
+.Product-Image #bigImg{
+    border-radius: 10px;
+}
+.Product-Image .S-imgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Product-Image .S-imgs #imgclick{
+    margin: 2px;
+    cursor: pointer;
+}
+.Product-Image .S-imgs #imgclick:hover{
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+.product-info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    color: #ddd;
+}
+.product-info span{
+    font-weight: bold;
+    color: #218a90;
+    font-size: 13pt;
+}
+.product-info #P-name{
+    font-size: 12pt;
+    margin-top: 36px;
+    border-bottom: 1px solid #218a90;
+}
+.product-info #P-price{
+    font-size: 10pt;
+}
+.product-info #P-description{
+    max-width: 250px;
+    font-size: 9pt;
+}
+
+@media (min-width:690px){
+    section{
+        max-width: 550px;
+        margin: auto;
+        flex-direction: row;
+        align-items: flex-start;
+        
+    }
+    .product-info{
+        margin-left: 16%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .product-info #P-name{
+        font-size: 14pt;
+        margin-top: 0;
+    }
+    .product-info #P-price{
+        font-size: 12pt;
+    }
+    .product-info #P-description{
+        font-size: 10pt;
+    }
+}

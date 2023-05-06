@@ -1,0 +1,199 @@
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5% 0;
+}
+.Cart-Products{
+    font-size: 7pt;
+    margin: 20px 0;
+    position: relative;
+    height: fit-content;
+}
+.Cart-Products #total{
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-bottom: 2px solid #218a90;
+    font-size: 12pt;
+    color: #ddd;
+}
+.C-product{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 8px;
+    color: #ddd;
+    padding-right: 5px;
+}
+.C-product #productImg{
+    width: 20%;
+    height: 100%;
+    border-radius: 5px;
+}
+.Cart-CustomerInfo{
+    margin-top: 50px;
+    font-size:1em;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+#cart-product-form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 45px;
+}
+#cart-product-form h3{
+    width: 150px;
+}
+#cart-product-form p{
+    width: 50px;
+}
+#remove-btn{
+    padding: 5px;
+    color: red;
+    font-size: 16pt;
+    background-color: #212121;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.Cart-CustomerInfo h1{
+    color: #ddd;
+}
+.Contact-info{
+    margin:20% 0;
+    display: flex;
+    row-gap: 20px;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.Address{
+    margin-bottom:20%;
+    display: flex;
+    row-gap: 20px;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+#Cart-CustomerForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Cart-CustomerForm input{
+    color: #ddd;
+    background-color: #212121;
+    width: 250px;
+    height: 5px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    padding: 15px 0;
+    color: #218a90;
+}
+#Cart-CustomerForm input::placeholder{
+    color: #ddd;
+    font-size: 9pt;
+    letter-spacing: 2px;
+}
+#Cart-CustomerForm input:focus{
+    border-bottom: 1px solid #218a90;
+    transition: all 0.75s;
+}
+#Cart-CustomerForm input:focus::placeholder {
+    color: #218a90;
+    transition: all 0.75s;
+}
+.submit-btn{
+    width: fit-content;
+    margin: auto;
+    font-size: 13pt;
+    padding: 15px 50px;
+    background-color: #1f1e1e;
+    color: #218a90;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    border-radius: 20px;
+}
+.submit-btn:hover{
+    background-color: #218a90;
+    color: black;
+    box-shadow: 0 0 5px #218a90, 0 0 25px #218a90, 0 0 50px #218a90, 0 0 100px #218a90;
+    transition: all 0.5s;
+}
+@media(min-width:700px){
+    main{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .Cart-Products{
+        order: 2;
+        width: 40%;
+    }
+    .Cart-CustomerInfo{
+        order: 1;
+        width: 40%;
+        margin: 0;
+    }
+    .C-product{
+        justify-content: space-around;
+        column-gap: 3px;
+    }
+    #cart-product-form h3{
+        width: 100px;
+    }
+    #cart-product-form p{
+        width: 50px;
+    }
+}
+@media(min-width:1000px){
+    main{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .Cart-Products{
+        order: 2;
+        width: 60%;
+        font-size: 10pt;
+    }
+    .Cart-CustomerInfo{
+        order: 1;
+        width: 50%;
+        margin: 0;
+    }
+    .C-product{
+        justify-content: space-between;
+        width: 80%;
+    }
+    .Cart-Products #total{
+        margin: 0;
+        margin-left: auto;
+        position: relative;
+        right: 26%;
+        margin-top: 70px;
+    }
+    #cart-product-form{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 45px;
+    }
+    #cart-product-form h3{
+        width: 250px;
+    }
+    #cart-product-form p{
+        width: 107px;
+    }
+
+}
